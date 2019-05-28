@@ -30,6 +30,7 @@ SYSTEMD_AUTO_ENABLE = "disable"
 SYSTEMD_SERVICE_${PN} = "phoromatic-client.service phoromatic-server.service"
 
 RDEPENDS_${PN} += "bash python php-cli util-linux-lscpu os-release lsb"
+RCONFLICTS_${PN} = "initscripts-functions"
 
 FILES_${PN} += " \
     ${datadir}/phoronix-test-suite \
